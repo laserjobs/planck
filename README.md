@@ -1,9 +1,13 @@
-# Planck Calculation
+# Planck Lattice Calculation
 
-A Python script to derive Planck's constant ($\hbar$) from the geometric properties of a high-resolution computational grid.
+Numerical routines for deriving fundamental constants from discrete lattice geometries.
+
+## Workflow
+1.  **`alpha_scaling.py`**: Computes the fine-structure constant ($\alpha$) using spectral zeta functions on a D4 lattice.
+2.  **`planck_calc.py`**: Uses the derived $\alpha$ to calculate the lattice resolution ($N$) required to reproduce Planck's constant ($\hbar$).
 
 ## Usage
 
 ```bash
-pip install numpy
+pip install -r requirements.txt
 python planck_calc.py
