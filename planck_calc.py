@@ -6,11 +6,11 @@ mpmath.mp.dps = 100
 
 def calculate_hbar_pure():
     """
-    PURE SRF DERIVATION
-    Calculates h-bar solely from geometric constants and the SRF grid size.
+    PURE DERIVATION
+    Calculates h-bar solely from geometric constants and the grid size.
     No CODATA input for h-bar is used.
     """
-    print("\n--- Pure SRF Geometric Derivation of Planck's Constant ---")
+    print("\n--- Pure Geometric Derivation of Planck's Constant ---")
 
     # 1. Inputs: Geometry and Gravity
     c = mpmath.mpf('299792458')       # Speed of Light (Geometric limit)
@@ -25,9 +25,9 @@ def calculate_hbar_pure():
     
     # 3. The Holographic Radius (R)
     # The universe's radius is the event horizon of the total information N.
-    # In SRF, R scales linearly with N in the holographic limit (simplest assumption).
+    # R scales linearly with N in the holographic limit (simplest assumption).
     # However, standard holography says N ~ Area ~ R^2.
-    # Let's use the SRF-derived scaling: Area = 4 * l_p^2 * N
+    # Let's use the derived scaling: Area = 4 * l_p^2 * N
     # But we don't know l_p yet! We only know G and c^3.
     #
     # We use the fundamental "Pixel Equation":
@@ -36,8 +36,8 @@ def calculate_hbar_pure():
     # To solve this without h-bar, we need R independent of h-bar.
     # We use the Hubble Radius as the physical container.
     # R_univ = c / H0 (approx). 
-    # Let's use the derived SRF Radius R ~ 10^58 m from the scaling law.
-    # R_srf = l_p_unity * N (where l_p_unity is a geometric unit).
+    # Let's use the derived Radius R ~ 10^58 m from the scaling law.
+    # R = l_p_unity * N (where l_p_unity is a geometric unit).
     
     # Let's use the "Mass of the Bit" approach.
     # Energy of the Grid E_total = N * E_bit
@@ -49,7 +49,7 @@ def calculate_hbar_pure():
     # If we define elementary charge e and eps0 geometrically...
     # 
     # BUT, sticking to the Grid Resolution N:
-    # The SRF asserts h_bar is the value that satisfies:
+    # This asserts h_bar is the value that satisfies:
     # N = exp( (pi/2) / alpha )
     
     # Calculating h_bar from the impedance of free space Z0:
