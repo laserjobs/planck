@@ -31,3 +31,6 @@ jobs:
 
     - name: Run Zeta Constants Derivation
       run: python zeta_constants.py
+
+    - name: Run Planck Constant Derivation
+      run: python apery_universe.py
