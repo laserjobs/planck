@@ -69,8 +69,9 @@ def calculate_planck_consistency():
     error_screened = (hbar_screened - hbar_codata) / hbar_codata
     
     print("--- Conclusion ---")
-    print(f"Raw Model Divergence     : {error_raw:+.3e}")
-    print(f"Screened Model Precision : {error_screened:+.3e}")
+    # Cast to float to avoid mpmath formatting error
+    print(f"Raw Model Divergence     : {float(error_raw):+.3e}")
+    print(f"Screened Model Precision : {float(error_screened):+.3e}")
     print("\nINTERPRETATION:")
     print("The vacuum spectral density is governed by ζ(2) ≈ 1.645.")
     print("The observed Planck constant is recovered only if the elementary charge")
