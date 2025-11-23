@@ -29,5 +29,5 @@ jobs:
     - name: Run Planck Constant Derivation
       run: python planck_calc.py
 
-    - name: Run Planck Constant Derivation
+    - name: Run Zeta Constants Derivation
       run: python zeta_constants.py
