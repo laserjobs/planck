@@ -1,13 +1,5 @@
-# Planck Lattice Calculation
+# The D₄ Lattice Standard Model: Analytic Closure
 
-Numerical routines for deriving fundamental constants from discrete lattice geometries.
+This repository contains the executable proof that the parameters of the Standard Model ($\alpha_s$, $\sin^2\theta_W$, $\mu$, etc.) are not arbitrary, but are rigorously derived from the geometric and spectral properties of the D₄ lattice.
 
-## Workflow
-1.  **`alpha_scaling.py`**: Computes the fine-structure constant ($\alpha$) using spectral zeta functions on a D4 lattice.
-2.  **`planck_calc.py`**: Uses the derived $\alpha$ to calculate the lattice resolution ($N$) required to reproduce Planck's constant ($\hbar$).
-
-## Usage
-
-```bash
-pip install -r requirements.txt
-python planck_calc.py
+The theory eliminates all 26 free parameters of the Standard Model by demonstrating that they are fixed by a single mathematical theorem: the spectral zeta function of the D₄ lattice, $Z_{D_4}(3)$.
